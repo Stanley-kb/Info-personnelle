@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos personnelles</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body background="img/bg.jpg" class="p-10 pb-20">
+    <section class="border-2 border-gray-50 h-5/6 border-2 border-gray-50 bg-sky-400 rounded h-full">
+
+        <div><h1 class="text-4xl mt-20">Mes infos personnelles</h1></div>
+
+        <form action="#" id="monFormulaire" class=" mt-20 h-max">
+            <div class="p-3 text-center flex flex-col justify-around sm:flex-col md:flex-col lg:flex-row xl:flex-row">
+
+                <div class="flex flex-col sm:6-3 md:m-3">
+                    <label for="nom"  class="text-gray-50"> Nom :</label>
+                    <input type="text" id="nom">
+                    <div id="messageNom"></div>
+                </div>
+
+                <div  class="flex flex-col sm:6-3 md:m-3">
+                    <label for="prenom" class="text-gray-50"> Prénom :</label>
+                    <input type="text" id="prenom">
+                    <div id="messagePrenom"></div>
+                </div>
+
+                <div  class="flex flex-col sm:6-3 md:m-3">
+                    <label for="email" class="text-gray-50"> E-mail :</label>
+                    <input type="text" id="email">
+                    <div id="messageEmail"></div>
+                </div>
+
+                <div  class="flex flex-col sm:6-3 md:m-3">
+                    <label for="dateNaissance" class="text-gray-50 inline-block"> Date de naissance :</label>
+                    <input type="date" id="dateNaissance" class="text-center" required>
+                    <div id="messageNaissance"></div>
+                </div>
+            </div>
+            <br>
+            <div class="buttons flex mt-20">
+                <button type="submit" id="buttonSubmit" name="mesButton" class="w-40 bg-gray-50 p-2 m-1 rounded-full">Envoyer</button>
+                <button type="reset" id="buttonReset" name="mesButton"  class="w-40 bg-gray-50 p-2 m-1 rounded-full">Annuler</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

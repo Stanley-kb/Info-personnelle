@@ -1,0 +1,33 @@
+
+body h1 {
+    color: white;
+    text-align: center;
+    padding: 3rem;
+ }
+
+ section {
+    box-shadow: 10px 10px 15px -10px rgba(0, 0, 0, 0.5),
+                -10px 10px 15px -10px rgba(0, 0, 0, 0.5),
+                0px 20px 20px -15px rgba(0, 0, 0, 0.5);
+}
+
+
+.mesInput {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input {
+    margin: 2rem;
+    border: none;
+    border-bottom: solid 3px black;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding:2rem;
+}
+
+
